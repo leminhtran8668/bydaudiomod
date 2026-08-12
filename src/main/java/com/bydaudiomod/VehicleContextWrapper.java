@@ -3,8 +3,6 @@ package com.bydaudiomod;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.pm.PackageManager;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 /**
  * ContextWrapper that overrides all Android permission check methods to
@@ -17,40 +15,37 @@ public class VehicleContextWrapper extends ContextWrapper {
     }
 
     @Override
-    public int checkPermission(@NonNull String permission, int pid, int uid) {
+    public int checkPermission(String permission, int pid, int uid) {
         return PackageManager.PERMISSION_GRANTED;
     }
 
     @Override
-    public int checkCallingOrSelfPermission(@NonNull String permission) {
+    public int checkCallingOrSelfPermission(String permission) {
         return PackageManager.PERMISSION_GRANTED;
     }
 
     @Override
-    public int checkCallingPermission(@NonNull String permission) {
+    public int checkCallingPermission(String permission) {
         return PackageManager.PERMISSION_GRANTED;
     }
 
     @Override
-    public int checkSelfPermission(@NonNull String permission) {
+    public int checkSelfPermission(String permission) {
         return PackageManager.PERMISSION_GRANTED;
     }
 
     @Override
-    public void enforceCallingOrSelfPermission(
-            @NonNull String permission, @Nullable String message) {
+    public void enforceCallingOrSelfPermission(String permission, String message) {
         // no-op
     }
 
     @Override
-    public void enforceCallingPermission(
-            @NonNull String permission, @Nullable String message) {
+    public void enforceCallingPermission(String permission, String message) {
         // no-op
     }
 
     @Override
-    public void enforcePermission(
-            @NonNull String permission, int pid, int uid, @Nullable String message) {
+    public void enforcePermission(String permission, int pid, int uid, String message) {
         // no-op
     }
 }
