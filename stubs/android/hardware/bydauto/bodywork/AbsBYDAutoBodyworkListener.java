@@ -1,8 +1,14 @@
 package android.hardware.bydauto.bodywork;
 
+import android.hardware.IBYDAutoEvent;
 import android.hardware.IBYDAutoListener;
+import android.hardware.bydauto.BYDAutoEventValue;
 
 public class AbsBYDAutoBodyworkListener implements IBYDAutoListener {
+    public void onDataChanged(IBYDAutoEvent event) {}
+    public void onDataEventChanged(int eventType, BYDAutoEventValue eventValue) {}
+    public void onError(int errCode, String errMessage) {}
+
     public void onDoorStateChanged(int area, int state) {}
     public void onAutoSystemStateChanged(int state) {}
     public void onPowerLevelChanged(int level) {}
