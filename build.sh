@@ -83,7 +83,11 @@ if [ ! -f "$KEYSTORE" ]; then
 fi
 
 echo "=== Ký APK ==="
-apksigner sign \
+APKSIGNER="$(command -v apksigner || true)"
+if [ -z "$APKSIGNER" ] && [ -n "${BUILD_TOOLS:-}" ]; then
+  APKSIGNER="$BUILD_TOOLS/apksigner"
+fi
+"$APKSIGNER" sign \
     --ks "$KEYSTORE" \
     --ks-key-alias debug \
     --ks-pass pass:android \
