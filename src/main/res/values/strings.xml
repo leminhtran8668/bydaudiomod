@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BYD Audio Mod</string>
+    <string name="app_subtitle">Âm thanh tuỳ chỉnh toàn diện cho xe BYD</string>
+    <string name="service_channel">Dịch vụ BYD Audio Mod</string>
+    <string name="service_running">Đang theo dõi sự kiện xe...</string>
+    <string name="enabled">Bật</string>
+    <string name="enabled_subtitle">Theo dõi sự kiện đóng/mở/khoá cửa</string>
+    <string name="select_file">Chọn File</string>
+    <string name="select_file_chooser_title">Chọn file âm thanh</string>
+    <string name="clear">Xoá</string>
+    <string name="no_file_selected">Chưa chọn file</string>
+    <string name="door_open_sound">Mở Cửa</string>
+    <string name="door_close_sound">Đóng Cửa</string>
+    <string name="lock_sound">Khoá Xe</string>
+    <string name="unlock_sound">Mở Khoá</string>
+    <string name="volume">Âm lượng:</string>
+    <string name="service_status">Trạng thái</string>
+    <string name="status_running">Đang chạy</string>
+    <string name="status_stopped">Đã dừng</string>
+    <string name="last_event">Sự kiện gần nhất</string>
+    <string name="no_events_yet">Chưa có sự kiện nào</string>
+    <string name="tab_inside">Loa Trong</string>
+    <string name="tab_outside">Loa Ngoài</string>
+    <string name="tab_feedback">Phản hồi</string>
+    <string name="tab_about">Tác giả</string>
+    <string name="preview">Nghe thử</string>
+    <string name="pattern">Kiểu âm:</string>
+    <string name="feedback_title">Âm thanh phản hồi sự kiện</string>
+    <string name="feedback_subtitle">Bật/tắt âm thanh khi xe thay đổi trạng thái</string>
+    <string name="cb_gear">Hộp số (P/R/N/D)</string>
+    <string name="cb_acc">ACC (Hành trình)</string>
+    <string name="cb_bsd">BSD (Điểm mù)</string>
+    <string name="cb_radar">Cảm biến lùi</string>
+    <string name="cb_energy_recycle">Thu hồi năng lượng</string>
+    <string name="cb_energy_road">Mặt đường (Energy)</string>
+    <string name="cb_operation_mode">Chế độ lái (Sport…)</string>
+    <string name="save_feedback">Lưu &amp; Áp dụng</string>
+    <string name="dev_tools">Công cụ nhà phát triển</string>
+    <string name="btn_adas">ADAS Monitor</string>
+    <string name="btn_reflection">Reflection Test</string>
+    <string name="author_title">Tác giả</string>
+    <string name="author_name">Lê Minh</string>
+    <string name="author_desc">BYD Audio Mod — gộp Âm thanh cửa + Audio Feedback\nDành cho xe BYD DiLink (Dolphin và các model tương thích)</string>
+    <string name="author_thanks">Cảm ơn cộng đồng BYD modding</string>
+    <string-array name="pattern_names">
+        <item>Không dùng</item>
+        <item>Ding-Dong (chuông cửa)</item>
+        <item>Dong-Ding (đảo ngược)</item>
+        <item>Bíp ba tiếng</item>
+        <item>Đổi tần số nhanh</item>
+        <item>Chuông dài</item>
+        <item>Chuông cửa hàng</item>
+        <item>Còi báo động</item>
+        <item>Kèn hiệu (Fanfare)</item>
+    </string-array>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giám sát ADAS BYD thời gian thực"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_adas_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trạng thái giám sát: Đang chạy"
+        android:textColor="#AAAAAA"
+        android:textSize="12sp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <!-- Left Column: ACC & Broadcast -->
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#1A1A1A"
+            android:padding="6dp"
+            android:layout_marginEnd="4dp">
+
+            <TextView
+                android:id="@+id/tv_left_col"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACC &amp; Lịch sử Broadcast..."
+                android:textColor="#FFA500"
+                android:textSize="13sp"
+                android:fontFamily="monospace" />
+        </ScrollView>
+
+        <!-- Middle Column: TJA & Line Tracking -->
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#1A1A1A"
+            android:padding="6dp"
+            android:layout_marginHorizontal="4dp">
+
+            <TextView
+                android:id="@+id/tv_mid_col"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TJA &amp; Bám làn đường..."
+                android:textColor="#00FFFF"
+                android:textSize="13sp"
+                android:fontFamily="monospace" />
+        </ScrollView>
+
+        <!-- Right Column: All Values -->
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#121212"
+            android:padding="6dp"
+            android:layout_marginStart="4dp">
+
+            <TextView
+                android:id="@+id/tv_right_col"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đang chờ dữ liệu..."
+                android:textColor="#00FF00"
+                android:fontFamily="monospace"
+                android:textSize="12sp"
+                android:lineSpacingExtra="2dp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
