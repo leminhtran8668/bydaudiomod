@@ -86,8 +86,7 @@
         <service
             android:name=".BydAutoService"
             android:enabled="true"
-            android:exported="false"
-            android:foregroundServiceType="specialUse" />
+            android:exported="false" />
 
         <service
             android:name=".RestarterJobService"
