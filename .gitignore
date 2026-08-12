@@ -10,3 +10,4 @@ keystore.properties
 .idea/
 *.iml
 .DS_Store
+!libs/byd_sdk.dex
